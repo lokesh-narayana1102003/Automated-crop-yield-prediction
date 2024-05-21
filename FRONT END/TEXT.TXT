@@ -1,0 +1,2 @@
+//LOGO<img class="learnworlds-element lw-logo js-change-image-node cursor-pointer" data-node-type="image" data-magic="image" src="https://lwfiles.mycourse.app/62a6cd5e1e9e2fbf212d608d-public/6efdd5e7f0d663cf231d0f2040be0a1e.png" id="el_1593094758324_16">
+<img loading="lazy" src="https://lwfiles.mycourse.app/62a6cd5e1e9e2fbf212d608d-public/6efdd5e7f0d663cf231d0f2040be0a1e.png" class="lw-widget-in learnworlds-image learnworlds-element js-change-image-node" data-node-type="image" data-element-id="image" id="el_1655312953245_326">

@@ -1,0 +1,458 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Krshi_Home_page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link href="https://cdn.mycourse.app/v2.28.4/_cdnAssets/webpack/99970.2efe38dc757b3e893561.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
+        <link href="https://cdn.mycourse.app/v2.28.4/_cdnAssets/webpack/60190.775cb28cceb9d961e709.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
+        <link href="https://cdn.mycourse.app/v2.28.4/_cdnAssets/webpack/18301.ec2d4cce64aa87149a2a.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
+        <link href="https://cdn.mycourse.app/v2.28.4/_cdnAssets/webpack/87516.f50809507a1d5b1b83bf.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
+        <link href="https://cdn.mycourse.app/v2.28.4/_cdnAssets/webpack/92224.6222aff229841d5f27bf.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.mycourse.app/v2.28.4/_cdnAssets/webpack/pages.d0454c4dfee514279cb0.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.mycourse.app/v2.28.4/_cdnAssets/webfont/webfont.js"></script>
+        <script>
+            (function() {
+                var fontFamilies = ["Barlow:300,400,400i,700,800", "Inter:300,400,400i,700,800", "Lato:300,400,400i,700,800", "Merriweather:300,400,400i,700,800", '&display=swap'];
+                var customFontFamilies = [];
+
+                // For when WebFont has not loaded
+                if (typeof WebFont === "undefined" || typeof WebFont.load === "undefined") {
+                    console.log("undefined webfont");
+                } else {
+                    var config = {};
+                    if (fontFamilies.length) {
+                        config["google"] = {
+                            families: fontFamilies
+                        }
+                    }
+                    if (customFontFamilies.length) {
+                        config["custom"] = {
+                            families: customFontFamilies
+                        }
+                    }
+                    WebFont.load(config);
+                }
+            }
+            )();
+        </script>
+        <link href="https://releases.transloadit.com/uppy/v2.10.0/uppy.min.css" rel="stylesheet" type="text/css" media="print" onload="this.media='all'">
+        
+        <style>
+            
+            .learnworlds-subheading-small {
+                font-size: 2.10rem;
+                font-weight: normal;
+                letter-spacing: 0.00rem;
+                line-height: 1.2;
+                text-transform: uppercase;
+                font-family: "Barlow";
+            }
+            button {
+                display: block;
+                margin: 20px auto;
+                padding: 10px 20px;
+                font-size: 18px;
+                background-color: #00cc76;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            
+            .learnworlds-heading4-normal {
+                font-size: 1.80rem;
+                font-weight: normal;
+                letter-spacing: 0.00rem;
+                line-height: 1.4;
+                text-transform: uppercase;
+                font-family: "Barlow";
+            }
+
+            .learnworlds-main-text-huge {
+                font-size: 9.00rem;
+                font-weight: 300;
+                letter-spacing: 0.00rem;
+                line-height: 1;
+                text-transform: none;
+                font-family: "Inter";
+            }
+
+            .learnworlds-main-text-very-large {
+                font-size: 5.00rem;
+                font-weight: normal;
+                letter-spacing: 0.00rem;
+                line-height: 1.55;
+                text-transform: none;
+                font-family: "Inter";
+            }
+
+           
+            .learnworlds-main-text-normal {
+                font-size: 1.80rem;
+                font-weight: normal;
+                letter-spacing: 0.00rem;
+                line-height: 1.55;
+                text-transform: none;
+                font-family: "Inter";
+            }
+
+            
+            .learnworlds-button-normal {
+                font-family: "Inter";
+                font-weight: bold;
+                font-size: 1.2rem;
+                letter-spacing: 0.00rem;
+                text-transform: none;
+                padding-top: 15px;
+                padding-right: 27px;
+                padding-bottom: 15px;
+                padding-left: 27px;
+            }
+            /*** white color ***/
+            .page-content {
+                background-color: white;
+            }
+
+            /*** body bg color ***/
+            .lw-body-bg {
+                background-color: white;
+                border-color: white;
+                color: #262626;
+            }
+        </style>
+        <style>
+            :root {
+                --font-size-desktop: 10px;
+                --font-size-tablet-portrait: 9px;
+                --font-size-smartphone-portrait: 8px;
+                --font-size-tablet-landscape: 10px;
+                --font-size-smartphone-landscape: 8px;
+            } 
+        </style> 
+        <style> 
+            /*nav bar*/
+            #section_1564405816535_1 {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            #component_222222222222_0 .lw-topbar-option-link {
+                font-family: Lato;
+            }
+            #component_222222222222_0 .lw-topbar-option-link:not(.button-like) {
+                color: #1A2930;
+            }
+            #el_1593094758324_16 {
+                height: auto;
+                width: 100px;
+            }
+        </style>
+        <style>
+            .scrolling-text {
+                width: 100%; /* Set the width of the scrolling container */
+                overflow: hidden; /* Hide the overflowing content */
+                /*border-top: 1px solid black;*/ 
+                border-bottom: 1px solid black; 
+            }
+            .scrolling-text p{
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scroll-left 10s linear infinite;
+            }
+            
+            @keyframes scroll-left {
+                0% {
+                    transform: translateX(100%);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+            .container {
+                display: flex;
+                align-items: center;
+            }
+
+            .container p {
+                flex-grow: 1;
+                margin-right: 10px;
+            }
+
+            .container img {
+                max-width: 100%;
+            }
+
+            .s1,.s2,.s3{
+                border-bottom: 1px solid black; 
+
+            }
+            .buttons{
+                text-align: center;
+            }
+            /* input:hover{
+                background-color: green;
+                color: black;
+            } */
+            /* table {
+                 border-collapse: separate;
+                border-spacing: 30px;
+            }
+            td,
+            th {
+            padding-right: 50px;
+            } */
+            table {
+                width: 100%;
+                table-layout: fixed;
+            }
+
+            td:first-child {
+                text-align: left;
+            }
+
+            td:last-child {
+                text-align: right;
+            }
+            table {
+                border-collapse: separate;
+                border-spacing: 0 10px; /* Adjust the value as needed */
+            }
+
+
+
+
+        </style>
+        
+    </head>
+    <body class="slug-home active-sitetemplate lw-page" style="--font-family-main-text: Inter">
+        <div id="pageContainer">
+            <div id="pageContent" class="page-content normal" ref="pageContent">
+                <section class="s1 js-learnworlds-section learnworlds-section lw-topbar lw-body-bg stretched-bg js-change-image-node transparent-onStart sticky-topbar" data-section-id="topbar1" data-magic="background-image" id="section_1564405816535_1" >
+                    <div class="lw-h-row js-same-content-wrapper">
+                        <div class="learnworlds-section-content js-learnworlds-section-content wide">
+                            <div class="lw-cols js-same-content-wrapper" data-node-type="columnWrapper" id="el_1594985834127_1">
+                                <div class="lw-topbar-logo-col col flex-item with-flexible-parts ai-s flex-none justify-content-flex-start js-same-content-child" data-node-type="column" id="el_1593094758321_15">
+                                    <div class="lw-topbar-logo-wrapper flex-item with-flexible-parts va-c">
+                                        <a class="js-linked-node" href="/home">
+                                            
+                                            <img class="learnworlds-element lw-logo js-change-image-node cursor-pointer" data-node-type="image" data-magic="image" src="{{url_for('static', filename='71316e9037604faf8217e07238073dfc (1).png')}}" id="el_1593094758324_16" style="height: 130px;width: auto;">
+
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hide-tp hide-sl hide-sp col flex-item with-flexible-parts ai-s flex-1 justify-content-flex-end js-same-content-child" data-node-type="column" id="el_1593094758407_18">
+                                    <div class="flex-item with-flexible-parts va-c">
+                                        <div class="lw-topbar-menu-wrapper flexible-cnt-wrapper js-lw-flexible-wrapper js-component link-distance-normal" data-node-type="navigation-menu" id="component_222222222222_0">
+                                            <nav class="lw-topbar-menu  with-hover ">
+                                                <ul class="lw-topbar-options with-flexible-parts align-items-center">
+                                                    
+                                                    <li class="lw-topbar-option">
+                                                        <a id="menuItem6" style="font-size:1.6rem;font-weight:700;" href="/home" class="lw-topbar-option-link learnworlds-main-text-normal js-menu-item lw-brand-text text-only  js-linked-node" data-interactive-link-type="pagelink" data-interactive-link-var1="home" data-interactive-link-var2="" data-interactive-link-window="default">
+                                                            <span class="lw-topbar-option-link-lbl nowrap" style="color: #1e1e1e;">Home</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="lw-topbar-option">
+                                                        <div id="menuItem_1684698130873_351" style="font-size:1.6rem;font-weight:700;" class="lw-topbar-option-link learnworlds-main-text-normal js-menu-item lw-brand-text text-only js-with-submenu-list with-submenu ">
+                                                            <span class="lw-topbar-option-link-lbl nowrap" style="color: #1e1e1e;">Features</span>
+                                                        </div>
+                                                        <ul class="lw-topbar-submenu js-submenu-list" style="background-color: rgb(255, 255, 255);">
+                                                            <li class="lw-topbar-submenu-item js-submenu-item">
+                                                                <a id="menuSubItem_1684698150792_352" style="font-size:1.6rem;font-weight:700;" class="lw-topbar-option-link learnworlds-main-text-normal lw-brand-text text-only  js-linked-node" data-interactive-link-type="courselink" data-interactive-link-var1="delta" data-interactive-link-var2="internalPage" data-interactive-link-window="default">1)YIELD PREDICTION
+											
+										                        </a>
+                                                            </li>
+                                                            <li class="lw-topbar-submenu-item js-submenu-item">
+                                                                <a id="menuSubItem_1684698167223_353" style="font-size:1.6rem;font-weight:700;" href="/course/alpha-batch-5" class="lw-topbar-option-link learnworlds-main-text-normal lw-brand-text text-only  js-linked-node" data-interactive-link-type="courselink" data-interactive-link-var1="alpha-batch-5" data-interactive-link-var2="internalPage" data-interactive-link-window="default">2)YIELD PREDICTION(USING API)
+											
+										                        </a>
+                                                            </li>
+                                                            <li class="lw-topbar-submenu-item js-submenu-item">
+                                                                <a id="menuSubItem_1684698174439_354" style="font-size:1.6rem;font-weight:700;" href="/course/placement-course-java" class="lw-topbar-option-link learnworlds-main-text-normal lw-brand-text text-only  js-linked-node" data-interactive-link-type="courselink" data-interactive-link-var1="placement-course-java" data-interactive-link-var2="internalPage" data-interactive-link-window="default">3)YIELD PREDICTION(WITH ONLY LOCATION)
+											
+										                        </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="lw-topbar-option">
+                                                        <a id="menuItem7" style="font-size:1.6rem;font-weight:700;" href="/college-reviews" class="lw-topbar-option-link learnworlds-main-text-normal js-menu-item lw-brand-text text-only js-with-submenu-list with-submenu js-linked-node" data-interactive-link-type="pagelink" data-interactive-link-var1="college-reviews" data-interactive-link-var2="" data-interactive-link-window="default">
+                                                            <span class="lw-topbar-option-link-lbl nowrap" style="color: #1e1e1e;">Resources</span>
+                                                        </a>
+                                                        <ul class="lw-topbar-submenu js-submenu-list" style="background-color: rgb(255, 255, 255);">
+                                                            <li class="lw-topbar-submenu-item js-submenu-item">
+                                                                <a id="menuSubItem_1682686191682_619" style="font-size:1.6rem;font-weight:700;" href="/college-reviews" class="lw-topbar-option-link learnworlds-main-text-normal lw-brand-text text-only  js-linked-node" data-interactive-link-type="pagelink" data-interactive-link-var1="college-reviews" data-interactive-link-var2="" data-interactive-link-window="default" style="color: #1e1e1e;">College Review
+											
+										                        </a>
+                                                            </li>
+                                                            <li class="lw-topbar-submenu-item js-submenu-item">
+                                                                <a id="menuSubItem_1682686195198_620" style="font-size:1.6rem;font-weight:700;" href="/notes" class="lw-topbar-option-link learnworlds-main-text-normal lw-brand-text text-only  js-linked-node" data-interactive-link-type="pagelink" data-interactive-link-var1="notes" data-interactive-link-var2="" data-interactive-link-window="default"style="color: #1e1e1e;">Notes
+											
+										                        </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="lw-topbar-option">
+                                                        
+                                                        <a class="js-linked-node" href="/" draggable="false" style="border-color: #00cc76;">
+                                                            <button class="learnworlds-button lw-btn-sha learnworlds-button-normal learnworlds-element js-same-content-child learnworlds-button-solid-brand has-icon-back cursor-pointer" data-node-type="button" id="el_1655665720072_636" style="background-color: #00cc76;border-color: #00cc76;color: white; border-radius: 15px;">
+                                                                <span data-node-type="icon" class="learnworlds-icon fas fa-angle-double-right" id="el_1655665752957_660"></span>
+                                                                <span data-node-type="text" id="el_1655665720072_637" style="border-color: #00cc76;">YIELD PREDICTION</span>
+                                                            </button>
+                                                        </a>
+                                                    </li>
+                                                    <li class="lw-topbar-option">
+                                                        
+                                                        <a class="js-linked-node" href="/" draggable="false" style="border-color: #00cc76;">
+                                                            <button class="learnworlds-button lw-btn-sha learnworlds-button-normal learnworlds-element js-same-content-child learnworlds-button-solid-brand has-icon-back cursor-pointer" data-node-type="button" id="el_1655665720072_636" style="background-color: #00cc76;border-color: #00cc76;color: white;border-radius: 15px;">
+                                                                <span data-node-type="icon" class="learnworlds-icon fas fa-angle-double-right" id="el_1655665752957_660"></span>
+                                                                <span class="lw-topbar-option-link-lbl nowrap" style="color: white;">SAMPLE DATA</span>
+                                                            </button>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="scrolling-text" style="font-weight: bold;">
+                    <p><span class="first-word" style="color: #00cc76;">KRSHI </span>(Agriculture with a new skill)</p>
+                    
+                </div>
+                <section style="text-align: center;background: linear-gradient(to bottom right,  rgba(255, 191, 81, 0.3), rgba(255, 255, 255, 0.4),rgba(0,128,0,0.3) );">
+                    <br>
+                    <p style="font-weight: bold;">FILL THE FOLLOWING INFORMATION</p>
+                    <br>
+            <div style="display: flex;
+            justify-content: center;
+            align-items: center;
+            ">
+                <form id ="myform" action="{{ url_for('predict_page') }}" method="post">
+                    <table  style="text-align: center;">
+                        <tr style="text-align: center;">
+                            
+                            <td style="text-align: center;">DISTRICT:<BR>
+                                <select style="width: 269px; border-radius: 10px;" name="district">
+                                    <option value="" disabled selected>Select district</option>
+                                    <option value="Adilabad" {% if district == 'Adilabad' %}selected{% endif %}>Adilabad</option>
+                                    <option value="Bhadradri Kothagudem" {% if district == 'Bhadradri Kothagudem' %}selected{% endif %}>Bhadradri Kothagudem</option>
+                                    <option value="Jagtial" {% if district == 'Jagtial' %}selected{% endif %}>Jagtial</option>
+                                    <option value="Jangaon" {% if district == 'Jangaon' %}selected{% endif %}>Jangaon</option>
+                                    <option value="Jayashankar" {% if district == 'Jayashankar' %}selected{% endif %}>Jayashankar Bhupalpally</option>
+                                    <option value="Jogulamba" {% if district == 'Jogulamba' %}selected{% endif %}>Jogulamba Gadwal</option>
+                                    <option value="Kamareddy" {% if district == 'Kamareddy' %}selected{% endif %}>Kamareddy</option>
+                                    <option value="Karimnagar" {% if district == 'Karimnagar' %}selected{% endif %}>Karimnagar</option>
+                                    <option value="Khammam" {% if district == 'Khammam' %}selected{% endif %}>Khammam</option>
+                                    <option value="Komaram bheem asifabad" {% if district == 'Komaram bheem asifabad' %}selected{% endif %}>Komaram bheem asifabad</option>
+                                    <option value="Mahabubabad" {% if district == 'Mahabubabad' %}selected{% endif %}>Mahabubabad</option>
+                                    <option value="Mahabubnagar" {% if district == 'Mahabubnagar' %}selected{% endif %}>Mahabubnagar</option>
+                                    <option value="Mancherial" {% if district == 'Mancherial' %}selected{% endif %}>Mancherial</option>
+                                    <option value="Medak" {% if district == 'Medak' %}selected{% endif %}>Medak</option>
+                                    <option value="Medchal" {% if district == 'Medchal' %}selected{% endif %}>Medchal</option>
+                                    <option value="Mulugu" {% if district == 'Mulugu' %}selected{% endif %}>Mulugu</option>
+                                    <option value="Nagarkurnool" {% if district == 'Nagarkurnool' %}selected{% endif %}>Nagarkurnool</option>
+                                    <option value="Nalgonda" {% if district == 'Nalgonda' %}selected{% endif %}>Nalgonda</option>
+                                    <option value="Narayanpet" {% if district == 'Narayanpet' %}selected{% endif %}>Narayanpet</option>
+                                    <option value="Nirmal" {% if district == 'Nirmal' %}selected{% endif %}>Nirmal</option>
+                                    <option value="Nizamabad" {% if district == 'Nizamabad' %}selected{% endif %}>Nizamabad</option>
+                                    <option value="Peddapalli" {% if district == 'Peddapalli' %}selected{% endif %}>Peddapalli</option>
+                                    <option value="Rajanna" {% if district == 'Rajanna' %}selected{% endif %}>Rajanna</option>
+                                    <option value="Rangareddy" {% if district == 'Rangareddy' %}selected{% endif %}>Rangareddy</option>
+                                    <option value="Sangareddy" {% if district == 'Sangareddy' %}selected{% endif %}>Sangareddy</option>
+                                    <option value="Siddipet" {% if district == 'Siddipet' %}selected{% endif %}>Siddipet</option>
+                                    <option value="Suryapet" {% if district == 'Suryapet' %}selected{% endif %}>Suryapet</option>
+                                    <option value="Vikarabad" {% if district == 'Vikarabad' %}selected{% endif %}>Vikarabad</option>
+                                    <option value="Wanaparthy" {% if district == 'Wanaparthy' %}selected{% endif %}>Wanaparthy</option>
+                                    <option value="Warangal" {% if district == 'Warangal' %}selected{% endif %}>Warangal</option>
+                                    <option value="Warangal Urban" {% if district == 'Warangal Urban' %}selected{% endif %}>Warangal Urban</option>
+                                    <option value="Yadadri" {% if district == 'Yadadri' %}selected{% endif %}>Yadadri</option>
+                                </select>
+                            </td>
+                            <td style="text-align: center;">SEASON:<BR>
+                                <select style="width: 269px;border-radius: 10px;" name="season">
+                                    <option value="" disabled selected>Select season</option>
+                                    <option value="Kharif" {% if season == 'Kharif' %}selected{% endif %}>Kharif</option>
+                                    <option value="rabi" {% if season == 'rabi' %}selected{% endif %}>Rabi</option>
+                                  </select>
+                            </td>
+                            <td style="text-align: center;">CROP:<BR>
+                                <select style="width: 269px;border-radius: 10px;" name="crop">
+                                    <option value="" disabled selected>Select crop</option>
+                                    <option value="Crop_Groundnut" {% if crop == 'Crop_Groundnut' %}selected{% endif %}>Groundnut</option>
+                                    <option value="Crop_Maize" {% if crop == 'Crop_Maize' %}selected{% endif %}>Maize</option>
+                                    <option value="Crop_Moong(Green Gram)" {% if crop == 'Crop_Moong(Green Gram)' %}selected{% endif %}>Moong (Green Gram)</option>
+                                    <option value="Crop_Rice" {% if crop == 'Crop_Rice' %}selected{% endif %}>Rice</option>
+                                    <option value="Crop_cotton(lint)" {% if crop == 'Crop_cotton(lint)' %}selected{% endif %}>Cotton (Lint)</option>
+                                  </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">RAINFALL(mm):<BR>
+                                <input style="width: 269px;border-radius: 10px;" type="text" id="rainfall" name="rainfall" value="{{ rainfall }}" /></td>
+                            <td style="text-align: center;">MINIMUM TEMPERATURE(°C):<br>
+                                <input style="width: 269px;border-radius: 10px;" type="text" id="min_temp" name="min_temp" value="{{ min_temp }}" /></td>
+                            <td style="text-align: center;">MAXIMUM TEMPERATURE(°C):<br>
+                                <input style="width: 269px;border-radius: 10px;" type="text" id="max_temp" name="max_temp" value="{{ max_temp }}" /></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">NITROGEN (Kg/Hectare):<br>
+                                <input style="width: 269px;border-radius: 10px;" type="text" id="n" name="n" required /></td>
+                            <td style="text-align: center;">PHOSPHORUS (Kg/Hectare):<BR>
+                                <input style="width: 269px;border-radius: 10px;" type="text" id="p" name="p" required /></td>
+                            <td style="text-align: center;">POTASSIUM (Kg/Hectare):<BR>
+                                <input style="width: 269px;border-radius: 10px;" type="text" id="k" name="k" required /></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">ZINC (ppm):<BR>
+                                <input style="width: 269px;border-radius: 10px;" type="text" id="zn" name="zn" required ></td>
+                            <td style="text-align: center;">IRON (ppm):<BR>
+                                <input style="width: 269px;border-radius: 10px;" type="text" id="fe" name="fe" required></td>
+                            <td style="text-align: center;">COPPER (ppm):<BR>
+                                <input style="width: 269px;border-radius: 10px;" type="text" id="cu" name="cu" required></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">MANGANESE (ppm):<BR>
+                                <input style="width: 269px;border-radius: 10px;" type="text" id="mn" name="mn" required ></td>
+                            <td style="text-align: center;">Ph:<br>
+                                <input style="width: 269px;border-radius: 10px;" type="text" id="ph" name="ph" required /></td>
+                            <td style="text-align: center;">IRRIGATION (MBGL):<BR>
+                                <input style="width: 269px;border-radius: 10px;" id="irrigation" name="irrigation" required></td>
+                        </tr>
+                        </table>
+                        <br>
+                        <button style="border-radius: 15px;background-color : #00cc76; border-color: #00cc76;font-weight: bold; color: white;text-align: center;" type="submit" value="Submit">SUBMIT</button>
+                
+
+                </form>
+            </div>
+            
+    <h1 id="yieldResult">Yield is {{result}}</h1>
+</section>
+</div></div>
+        <script>
+            // Disable the first option (default string) when the dropdown changes
+            document.getElementById("dist").addEventListener("change", function() {
+              this.options[0].disabled = true;
+            });
+            document.getElementById("ses").addEventListener("change", function() {
+              this.options[0].disabled = true;
+            });
+            document.getElementById("crp").addEventListener("change", function() {
+              this.options[0].disabled = true;
+            });
+        </script>
+    </body>
+</html> -->
+<h1>{{ translate('Welcome to my website!') }}</h1>
+<p>{{ translate('This is a sample paragraph.') }}</p>
+<form action="{{ url_for('change_language') }}" method="POST">
+    <select name="language" onchange="this.form.submit()">
+        {% for code, lang in current_app.config['LANGUAGES'].items() %}
+            <option value="{{ code }}" {% if session.get('language') == code %}selected{% endif %}>{{ lang }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" style="display: none;">
+</form>
+
